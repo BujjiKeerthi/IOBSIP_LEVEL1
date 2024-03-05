@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+   >
+</head>
+<body>
+   <div class="navbar">
+    <div class="logo">LOGO</div>
+      <ul class="links">
+
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#service">SERVICE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+
+        
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    
+    
+   </div>
+
+   <div class="dropdown_menu" >
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#service">SERVICE</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+   </div>
+
+    <h1 class="like">LIKE NATURE</h1>
+    <h1 class="phase">BE CREATIVE!</h1>
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa quas minima ratione nisi modi ipsa libero illum dolore ut pariatur voluptas inventore, hic minus at? In, dolorum accusamus qui ea quidem quod at ipsam amet quisquam, mollitia culpa? Laboriosam deserunt et velit rerum aliquid, distinctio magni illum! Cupiditate optio omnis quam repellendus fugiat quibusdam accusantium asperiores rem, nihil ad temporibus eligendi maiores fugit sunt laudantium provident natus cum similique ratione voluptate praesentium doloremque labore, nisi saepe. Maxime illum nemo est nihil laboriosam! Rem non voluptate nesciunt ullam? Voluptatibus, perferendis? Perspiciatis et labore alias distinctio. Incidunt dolorem commodi consequuntur ipsa.
+    </p>
+
+
+    <button class="btn"> MORE INFO</button>
+
+    <footer class="footer">
+        <div class="icons">
+            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </footer>
+    <script>
+      const toggleBtn =document.querySelector('.toggle_btn')
+      const toggleBtnIcon =document.querySelector('.toggle_btn i')
+      const dropDownMenu =document.querySelector('.dropdown_menu')
+    
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen=dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark':'fa-solid fa-bars'
+      };
+      </script>
+</body>
+
+
+</html>
